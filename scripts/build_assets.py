@@ -67,6 +67,7 @@ def build_cv() -> None:
     education = [
         [Paragraph("Tecnicatura en Programación", job), Paragraph("UTN Facultad Regional General Pacheco | En curso", body)],
         [Paragraph("Front-End JS", job), Paragraph("Talento Tech | Ago 2024 - Dic 2024 | Nota: 9.9/10", body)],
+        [Paragraph("Formación en Inglés", job), Paragraph("Bridge School of English | Mar 2025", body)],
         [Paragraph("C# Nivel 1", job), Paragraph("MaxiPrograma | Feb 2023 - Mar 2023", body)],
         [Paragraph(".NET, POO y SQL", job), Paragraph("MaxiPrograma | Abr 2024 - Jun 2024", body)],
     ]
