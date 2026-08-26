@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Axel Sanz — Desarrollador .NET</title>
+  <title>Axel Sanz — Desarrollador .NET Junior | Portfolio</title>
+  <meta name="description" content="Portfolio de Axel Sanz, Desarrollador .NET Junior: C#, SQL Server y ASP.NET, con 10+ años de experiencia en operaciones reales aplicados a software." />
+  <link rel="canonical" href="https://axelsanz12.github.io/AxelSanzdev/" />
+  <meta property="og:title" content="Axel Sanz — Desarrollador .NET Junior" />
+  <meta property="og:description" content="C#, SQL Server y ASP.NET. De operaciones reales a software funcional." />
+  <meta property="og:image" content="https://axelsanz12.github.io/AxelSanzdev/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://axelsanz12.github.io/AxelSanzdev/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0e13'/%3E%3Cpath d='M18 46 30 17h5l12 29h-7l-2.5-7H27L24.5 46Zm11-13h6.5L32 24Z' fill='%234fffb0'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -24,7 +36,7 @@
       --radius: 12px;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
 
     body {
       background: var(--bg);
@@ -152,6 +164,8 @@
       color: var(--muted);
     }
     .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .btn-text { color: var(--muted); padding-inline: 8px; }
+    .btn-text:hover { color: var(--accent); transform: translateY(-2px); }
 
     /* Hero right - terminal */
     .hero-right {
@@ -228,7 +242,7 @@
     #skills { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 20px;
     }
     .skill-card {
@@ -690,18 +704,17 @@
       <span class="line2">Sanz</span>
     </h1>
     <p class="hero-desc">
-      <strong>Desarrollador .NET Junior</strong> enfocado en C#, SQL Server y sistemas de gestión web y de escritorio. Estudiante de la Tecnicatura en Programación en UTN, con experiencia convirtiendo procesos operativos reales en soluciones funcionales.
+      <strong>Desarrollador .NET Junior</strong> — C#, SQL Server y sistemas de gestión web y de escritorio. Antes de programar pasé 10+ años dentro de operaciones reales (logística y planificación): hoy uso ese conocimiento para construir software que resuelve procesos de negocio de verdad, no ejercicios de curso. Estudiante de la Tecnicatura en Programación (UTN).
     </p>
     <div class="hero-cta">
-      <a href="https://github.com/Axelsanz12" target="_blank" class="btn btn-primary">
+      <a href="https://github.com/Axelsanz12" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         Ver GitHub
       </a>
-      <a href="https://www.linkedin.com/in/axelsanz-dev/" target="_blank" class="btn btn-ghost">
+      <a href="https://www.linkedin.com/in/axelsanz-dev/" target="_blank" rel="noopener noreferrer" class="btn btn-text">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
-      <a href="#contacto" class="btn btn-ghost">Contactar</a>
     </div>
   </div>
   <div class="hero-right">
@@ -718,7 +731,8 @@
         <div class="t-line"><span class="t-key">var</span> <span class="t-cmd">developer</span> = <span class="t-key">new</span> <span class="t-val">Developer</span>()</div>
         <div class="t-line">{</div>
         <div class="t-line t-out"><span class="t-key">Name</span>        = <span class="t-str">"Axel Sanz"</span>,</div>
-        <div class="t-line t-out"><span class="t-key">Location</span>    = <span class="t-str">"Belén de Escobar, AR"</span>,</div>
+        <div class="t-line t-out"><span class="t-key">Location</span>    = <span class="t-str">"Garín, Buenos Aires, AR"</span>,</div>
+        <div class="t-line t-out"><span class="t-key">Background</span>  = <span class="t-str">"10+ years in real operations"</span>,</div>
         <div class="t-line t-out"><span class="t-key">Stack</span>       = <span class="t-str">["C#", ".NET", "SQL Server"]</span>,</div>
         <div class="t-line t-out"><span class="t-key">Frameworks</span>  = <span class="t-str">["WinForms", "ASP.NET"]</span>,</div>
         <div class="t-line t-out"><span class="t-key">Education</span>   = <span class="t-str">"UTN - Tec. Programación"</span>,</div>
@@ -749,6 +763,16 @@
         <span class="tag">HTML</span>
         <span class="tag">CSS</span>
         <span class="tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-cat"><span class="skill-cat-icon">📈</span> Datos &amp; Reporting</div>
+      <div class="skill-tags">
+        <span class="tag hl">Power BI</span>
+        <span class="tag hl">Excel avanzado</span>
+        <span class="tag">Tablas dinámicas</span>
+        <span class="tag">Macros</span>
+        <span class="tag">Indicadores de gestión</span>
       </div>
     </div>
     <div class="skill-card">
@@ -794,7 +818,9 @@
     <div class="project-card reveal">
       <div class="project-header">
         <div class="project-icon">📊</div>
-        <div class="project-links"></div>
+        <div class="project-links">
+          <a href="https://github.com/Axelsanz12?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+        </div>
       </div>
       <div>
         <div class="project-name">Seguimiento de Ciclos</div>
@@ -805,7 +831,7 @@
         <span class="tech-badge blue">SQL Server</span>
         <span class="tech-badge red">N-Capas</span>
       </div>
-      <p class="project-desc">Aplicación web para centralizar la planificación y el seguimiento operativo de ciclos, reemplazando planillas aisladas por información persistente y trazable.</p>
+      <p class="project-desc">Reemplaza planillas de Excel dispersas por una única fuente de datos trazable. Aplicación web para centralizar la planificación y el seguimiento operativo de ciclos, con roles de usuario y validaciones en SQL Server.</p>
       <ul class="project-features">
         <li>Importación y exportación de planificación desde Excel</li>
         <li>Dashboard diario con indicadores y filtros operativos</li>
@@ -832,7 +858,7 @@
         <span class="tech-badge">WinForms</span>
         <span class="tech-badge blue">SQL Server</span>
       </div>
-      <p class="project-desc">Aplicación de escritorio completa para la administración integral de un kiosco: inventario, ventas y reportes.</p>
+      <p class="project-desc">Reduce el control manual de stock y ventas al centralizar inventario, vencimientos y reportes. Aplicación de escritorio para la administración integral de un kiosco.</p>
       <ul class="project-features">
         <li>ABM completo de productos con control de stock</li>
         <li>Registro y control de ventas diarias</li>
@@ -860,7 +886,7 @@
         <span class="tech-badge blue">SQL Server</span>
         <span class="tech-badge red">N-Capas</span>
       </div>
-      <p class="project-desc">Sistema de gestión de productos con arquitectura estructurada en capas, separando lógica de negocio, datos y presentación.</p>
+      <p class="project-desc">Centraliza el alta, consulta y mantenimiento de productos en una solución mantenible. Separa lógica de negocio, acceso a datos y presentación mediante arquitectura en capas.</p>
       <ul class="project-features">
         <li>CRUD completo de productos y operaciones</li>
         <li>Arquitectura en capas (DAL / BLL / UI)</li>
@@ -886,7 +912,7 @@
         <span class="tech-badge blue">SQL Server</span>
         <span class="tech-badge blue">T-SQL</span>
       </div>
-      <p class="project-desc">Sistema enfocado en la integración profunda con SQL Server, con consultas avanzadas y lógica de negocio implementada en base de datos.</p>
+      <p class="project-desc">Convierte datos relacionales en consultas y operaciones reutilizables para reducir tareas repetitivas. Implementa lógica de negocio, vistas y procedimientos almacenados en SQL Server.</p>
       <ul class="project-features">
         <li>Consultas SQL complejas y optimizadas</li>
         <li>Stored procedures y vistas</li>
@@ -910,7 +936,7 @@
       <div class="cert-name">C# — Fundamentos y Programación</div>
       <div class="cert-meta">
         <div class="cert-issuer">Maxi Programa — Lic. Maximiliano Sar Fernández</div>
-        <div class="cert-date">Aprobado: 1 de marzo de 2024</div>
+        <div class="cert-date">Cursado: feb 2023 - mar 2023</div>
       </div>
       <div class="cert-topics">
         <span class="tag" style="font-size:0.68rem; padding:3px 9px;">Sintaxis C#</span>
@@ -924,7 +950,7 @@
       <div class="cert-name">C# — POO, .NET y SQL Server</div>
       <div class="cert-meta">
         <div class="cert-issuer">Maxi Programa — Lic. Maximiliano Sar Fernández</div>
-        <div class="cert-date">Aprobado: 15 de abril de 2025</div>
+        <div class="cert-date">Cursado: abr 2024 - jun 2024</div>
       </div>
       <div class="cert-topics">
         <span class="tag" style="font-size:0.68rem; padding:3px 9px;">POO</span>
@@ -960,26 +986,25 @@
   </div>
   <div class="timeline reveal">
     <div class="timeline-item">
-      <div class="timeline-date">Reciente</div>
-      <div class="timeline-body">
-        <div class="timeline-role">Administrativo de Logística</div>
-        <div class="timeline-company">CyE Construcciones</div>
+        <div class="timeline-date">Abr 2026<br>Actualidad</div>
+        <div class="timeline-body">
+        <div class="timeline-role">Analista de planificación</div>
+        <div class="timeline-company">LOG-IN FARMA</div>
         <ul class="timeline-list">
-          <li>Análisis y seguimiento de procesos logísticos con datos operativos</li>
-          <li>Elaboración de reportes diarios e indicadores para la toma de decisiones</li>
-          <li>Uso de sistemas de rastreo y control documental de flota</li>
+          <li>Planificación y seguimiento integral de operaciones logísticas y productivas</li>
+          <li>Análisis de procesos para mejorar tiempos, recursos y costos</li>
+          <li>Indicadores y reportes en Excel para la toma de decisiones operativas</li>
         </ul>
       </div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Anterior</div>
+      <div class="timeline-date">Jul 2025<br>Feb 2026</div>
       <div class="timeline-body">
-        <div class="timeline-role">Administrativo de Flota / Operador</div>
-        <div class="timeline-company">Flota Internacional</div>
+        <div class="timeline-role">Administrativo Sr</div>
+        <div class="timeline-company">CYE Construcciones</div>
         <ul class="timeline-list">
-          <li>Coordinación, seguimiento satelital y optimización de rutas</li>
-          <li>Análisis de datos logísticos para mejorar tiempos operativos</li>
-          <li>Generación de reportes y control de documentación</li>
+          <li>Gestión de información operativa y administrativa con foco en precisión y control</li>
+          <li>Organización de datos y optimización de procesos con información estructurada</li>
         </ul>
       </div>
     </div>
@@ -999,6 +1024,12 @@
       <div class="edu-status">Carrera universitaria en curso.</div>
       <div class="badge-inprogress">En curso</div>
     </div>
+    <div class="edu-card">
+      <div class="edu-institution">Talento Tech</div>
+      <div class="edu-degree">Front-End JS — Programación</div>
+      <div class="edu-status">Ago 2024 - dic 2024 · HTML semántico, CSS responsive, Bootstrap, Git y JavaScript.</div>
+      <div class="badge-done">Nota final: 9.9/10</div>
+    </div>
   </div>
 </section>
 
@@ -1009,6 +1040,10 @@
     <h2 class="contact-title">¿Listo para construir algo juntos?</h2>
     <p class="contact-desc">Busco mi primera oportunidad como Desarrollador .NET Junior o Trainee. Si tenés un equipo o proyecto donde pueda aportar y crecer, estoy disponible.</p>
     <div class="contact-links">
+      <a href="Axel-Sanz-CV.pdf" download class="contact-item">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M5 21h14"/></svg>
+        Descargar CV (PDF)
+      </a>
       <a href="mailto:Sanzaxel12@hotmail.com" class="contact-item">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         Sanzaxel12@hotmail.com
@@ -1031,7 +1066,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <span class="footer-copy">© 2026 Axel Sanz — Belén de Escobar, Argentina</span>
+  <span class="footer-copy">© 2026 Axel Sanz — Garín, Buenos Aires, Argentina</span>
   <span class="footer-stack">Built with <span>HTML · CSS · JS</span></span>
 </footer>
 
